@@ -16,7 +16,7 @@ pipeline {
         
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t my-web-app .'
+                sh 'docker build -t scd .'
             }
         }
         
