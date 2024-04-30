@@ -13,13 +13,11 @@ pipeline {
                 bat 'npm install'
             }
         }
+        
         stage('Build Docker Image') {
             steps {
-              
-                dir('src') {
-                  
-                    bat 'docker build -t scd .'
-                }
+                bat 'dir' // For Windows
+               bat 'docker build -t scd .'
             }
         }
         
