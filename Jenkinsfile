@@ -15,9 +15,9 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                // Navigate to the directory containing the Dockerfile
+              
                 dir('src') {
-                    // Run the docker build command
+                  
                     bat 'docker build -t scd .'
                 }
             }
