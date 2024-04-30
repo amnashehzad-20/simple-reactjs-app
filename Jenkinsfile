@@ -16,6 +16,7 @@ pipeline {
         
         stage('Build Docker Image') {
             steps {
+                bat 'dir' // For Windows
                bat 'docker build -t scd .'
             }
         }
